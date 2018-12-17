@@ -1,0 +1,30 @@
+server:
+  port: 8092
+
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+  kafka:
+    bootstrap-servers: 10.10.15.44:9092
+    producer:
+      retries: 0
+      acks: all
+      batch-size: 16384
+    consumer:
+      group-id: test
+      enable-auto-commit: true
+      max-poll-records: 5
+
+
+
+
+
+rountingkey: A.rounat
+topicExchange: exchange
+
