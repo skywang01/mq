@@ -25,6 +25,5 @@ spring:
 
 
 
-rountingkey: A.rounat
 topicExchange: exchange
 
